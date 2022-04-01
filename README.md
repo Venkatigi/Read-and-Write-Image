@@ -1,10 +1,6 @@
 # READ AND WRITE AN IMAGE
 ## AIM
-To write a python program using OpenCV to do the following image manipulations.
-i) Read, display, and write an image.
-ii) Access the rows and columns in an image.
-iii) Cut and paste a small portion of the image.
-
+To write a python program using OpenCV to do the following image manipulations.<br>i) Read, display, and write an image.<br>ii) Access the rows and columns in an image.<br>iii) Cut and paste a small portion of the image.
 ## Software Required:
 Anaconda - Python 3.7
 ## Algorithm:
@@ -19,64 +15,60 @@ Use imwrite(filename, image) to write the image.
 ### Step5:
 End the program and close the output image windows.
 ## Program:
-### Developed By:
-### Register Number: 
-i) #To Read,display the image
+### Developed By    : Venkatesh E
+### Register Number : 212221230119
+i) To Read,display the image
+```python
+import cv2
+a=cv2.imread('1.jpg',1)
+cv2.imshow("hi",a)
+cv2.waitKey(0)
 ```
-  import cv2
-
+ii) To write the image
+```python
+import cv2
+a=cv2.imread('1.jpg',1)
+cv2.imwrite("12.jpg",a)
+cv2.imshow("car",a)
+cv2.waitKey(0)
 ```
-ii) #To write the image
+iii) Find the shape of the Image
+```python
+import cv2
+a=cv2.imread('1.jpg',1)
+print(a.shape)
 ```
-
-
-
+iv) To access rows and columns
+```python
+import cv2
+a=cv2.imread('1.jpg',1)
+import random
+for i in range(100):
+    for j in range(a.shape[1]):
+        a[i][j]=[random.randint(0,255),random.randint(0,255),random.randint(0,255)]
+cv2.imwrite('12.jpg',a)
+cv2.imshow('nothing',a)
+cv2.waitKey(0)
 ```
-iii) #Find the shape of the Image
-``python3
-
-
-
+v) To cut and paste portion of image
+```python
+import cv2
+A=cv2.imread("1.jpg",1)
+tag=A[250:350,275:290]
+A[225:325,250:265]=tag
+cv2.imshow("Car",A)
+cv2.waitKey(0)
 ```
-iv) #To access rows and columns
-```python3
-
-
-
-```
-v) #To cut and paste portion of image
-```python3
-
-
-
-```
-
 ## Output:
-
 ### i) Read and display the image
-
-<br>
-<br>
-
+![Read and display the image](1.jpg)
 ### ii)Write the image
-
-<br>
-<br>
-
+![Write the image](2.jpg)
 ### iii)Shape of the Image
-
-<br>
-<br>
-
+![Shape of the Image](3.JPG)
 ### iv)Access rows and columns
-<br>
-<br>
-
+![Access rows and columns](4.JPG)
 ### v)Cut and paste portion of image
-<br>
-<br>
-
+![Cut and paste portion of image](5.JPg)
 ## Result:
 Thus the images are read, displayed, and written successfully using the python program.
-
-
