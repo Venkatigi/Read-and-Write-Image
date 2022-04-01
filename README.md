@@ -69,6 +69,6 @@ cv2.waitKey(0)
 ### iv)Access rows and columns
 ![Access rows and columns](4.JPG)
 ### v)Cut and paste portion of image
-![Cut and paste portion of image](5.JPG)
+![Cut and paste portion of image](6.JPG)
 ## Result:
 Thus the images are read, displayed, and written successfully using the python program.
