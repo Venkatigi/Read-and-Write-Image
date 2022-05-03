@@ -54,8 +54,8 @@ v) To cut and paste portion of image
 ```python
 import cv2
 A=cv2.imread("1.jpg",1)
-tag=A[250:350,275:290]
-A[225:325,250:265]=tag
+tag=A[250:350,275:375]
+A[100:200,100:200]=tag
 cv2.imshow("Car",A)
 cv2.waitKey(0)
 ```
@@ -69,6 +69,6 @@ cv2.waitKey(0)
 ### iv)Access rows and columns
 ![Access rows and columns](4.JPG)
 ### v)Cut and paste portion of image
-![Cut and paste portion of image](5.JPG)
+![Cut and paste portion of image](6.JPG)
 ## Result:
 Thus the images are read, displayed, and written successfully using the python program.
